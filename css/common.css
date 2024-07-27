@@ -1,0 +1,33 @@
+/*放各個頁面相同的部分:頭 尾部*/
+/*版心*/
+
+.container-fluid{
+    font-size: 30px;
+    margin: 20px;
+}
+.container-fluid img{
+    margin: 0 20px;
+    
+}
+.container-fluid .navbar-brand{
+    width: 250px;
+    font-size: 30px;
+}
+.collapse .nav-item{
+    margin:0 3rem;
+}
+
+/*footer*/
+.footer{
+    margin-top: 4rem;
+    /* height: 100%; */
+}
+.footer a{
+    width: 100%;
+    text-align: center;
+}
+.footer a span{
+    line-height: 100px;
+    color: black;
+    font-size: 2em;
+}

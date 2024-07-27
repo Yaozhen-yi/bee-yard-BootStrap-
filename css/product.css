@@ -1,0 +1,95 @@
+#dataForm{
+    margin-top: 10rem;
+}
+.section .tltle{
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+.section .list-group{
+    margin: 1rem;
+    list-style: none;
+}
+.section .list-group li{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+.section .list-group li :hover{
+    font-weight: 700;
+    color: #5ba3a3f4;
+}
+.section .card-img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.section #pure_hone{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin: 2rem;
+}
+.section .row{
+    width: 100%;
+}
+.section .row .title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+.section #gift-box{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem;
+
+}
+.section #other{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin: 2rem;
+}
+/*下拉式選單*/
+.dropdown-group{
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+.dropdown-group .title{
+    font-weight: 700;
+    
+}
+.dropdown-group select{
+    text-align: center;
+}
+.dropdown-group .money{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
+}
+#total{
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+#total #grandTotal{
+    color: red;
+}
+#total button{
+    margin: 1rem;
+}
+
+
+.back-top{
+    font-size: 2rem;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.back-top a:hover{
+    color: #e2727e;
+}
+
+
+

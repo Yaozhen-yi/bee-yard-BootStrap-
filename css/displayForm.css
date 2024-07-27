@@ -1,0 +1,86 @@
+.content .row{
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 2rem;
+}
+.row .form .title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.form #result p{
+    text-align: left; 
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.form #result span{
+    border: 2px solid #adb5bd;
+    font-weight: 700;
+}
+/*隱藏樣式*/
+.hidden {
+    display: none;
+}
+
+/*訂購商品*/
+.buyProduct{
+    width: 100%;
+}
+.buyProduct .title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+#honey-series,
+#narrow-mouth,
+#suger,
+#portable,
+#gift_wide_mouth,
+#gift_Narrow_mouth{
+    width: 100%;
+    margin: 2rem 1rem;
+}
+h2{
+    margin: 1rem  1.5rem;
+}
+.card-img{
+    width: 25rem;
+    margin: 1rem 1.5rem;
+}
+.material{
+    margin: 1.5rem;
+}
+.material p{
+    font-size: 1.5rem;
+}
+.material span{
+    margin-left: 1.5rem;
+    font-weight: 700;
+    color: #dc3545;
+}
+/*總金額*/
+.total{
+    margin: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.total span{
+    color: #dc3545;
+    font-weight: 700;
+    
+}
+.content .btn{
+    margin: 1rem 3rem;
+    font-size: 1.5rem;
+}
+.content .btn:hover{
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #adb5bd;
+}

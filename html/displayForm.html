@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大林五百年茄苳樹下-吳家養蜂場">
+    <meta name="keywords" content="大林吳家養蜂場">
+    <title>大林五百年茄苳樹下-吳家養蜂場</title>
+    <link rel="shortcut icon" href="../images/吳家養蜂場logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/displayForm.css">
+</head>
+<body>
+    <!--頭部-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="../images/吳家養蜂場.png" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+            吳家養蜂場</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./honey_myth.html">蜂蜜迷思</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./product.html">產品介紹</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">搜尋</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <!--訂購資訊-->
+    <div class="content">
+        <div class="row">
+            <!--訂購資訊-->
+            <div class="col-sm-6">
+                <div class="form">
+                    <div id="result">
+                        <span class="title">訂購人訊息</span>
+                        <p>姓名: 
+                            <span id="information1"></span>
+                        </p>
+                        <p>電話: 
+                            <span id="information2"></span>
+                        </p>
+                        <p>地址: 
+                            <span id="information3"></span>
+                        </p>
+                        <p>E-mail: 
+                            <span id="information4"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--訂購商品-->
+            <div class="col-sm-6">
+                <div class="buyProduct">
+                    <span class="title">您訂購的商品如下:</span>
+                    <div id="honey-series" class="hidden">
+                        <h2>3、5公斤装纯蜜系列</h2>
+                        <img src="../uploads/3、5kg.jpg" class="card-img" alt="3、5公斤裝純蜜系列">
+                        <div class="material">
+                            <p>公斤: <span id="displayWeight1"></span></p>
+                            <p>口味: <span id="displayTaste1"></span></p>
+                            <p>數量: <span id="displayQuantity1"></span></p>
+                            <p>金額: <span id="displayResult1"></span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div id="narrow-mouth" class="hidden">
+                        <h2>窄口瓶装纯蜜系列</h2>
+                        <img src="../uploads/Narrow_mouth.jpg" class="card-img" alt="窄口瓶裝純蜜系列">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste2"></span></p>
+                            <p>數量: <span id="displayQuantity2"></span></p>
+                            <p>金額: <span id="displayResult2"></span></p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="suger" class="hidden">
+                        <h2>果糖瓶装纯蜜系列</h2>
+                        <img src="../uploads/suger.jpg" class="card-img" alt="果糖瓶裝純蜜系列">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste3"></span></p>
+                            <p>數量: <span id="displayQuantity3"></span></p>
+                            <p>金額: <span id="displayResult3"></span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div id="portable" class="hidden">
+                        <h2>隨身瓶裝純蜜系列</h2>
+                        <img src="../uploads/portable.jpg" class="card-img" alt="隨身瓶裝純蜜系列">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste4"></span></p>
+                            <p>數量: <span id="displayQuantity4"></span></p>
+                            <p>金額: <span id="displayResult4"></span></p>
+                        </div>
+                        
+                    </div>
+                    <div id="gift_wide_mouth" class="hidden">
+                        <h2>蜂蜜禮盒(寬口瓶)</h2>
+                        <img src="../uploads/gift_wide_mouth.jpg" class="card-img" alt="蜂蜜禮盒(寬口瓶)">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste5"></span></p>
+                            <p>數量: <span id="displayQuantity5"></span></p>
+                            <p>金額: <span id="displayResult5"></span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div id="gift_Narrow_mouth" class="hidden">
+                        <h2>蜂蜜禮盒(窄口瓶)</h2>
+                        <img src="../uploads/gift_Narrow_mouth.jpg" class="card-img" alt="蜂蜜禮盒(窄口瓶)">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste6"></span></p>
+                            <p>數量: <span id="displayQuantity6"></span></p>
+                            <p>金額: <span id="displayResult6"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="lip_balm" class="hidden">
+                        <h2>護唇膏</h2>
+                        <img src="../uploads/lip_balm.jpg" class="card-img" alt="護唇膏">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste7"></span></p>
+                            <p>數量: <span id="displayQuantity7"></span></p>
+                            <p>金額: <span id="displayResult7"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="Honey_loquat" class="hidden">
+                        <h2>蜂蜜枇杷喉糖</h2>
+                        <img src="../uploads/Honey_loquat.jpg" class="card-img" alt="蜂蜜枇杷喉糖">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste8"></span></p>
+                            <p>數量: <span id="displayQuantity8"></span></p>
+                            <p>金額: <span id="displayResult8"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="Fruit_enzyme" class="hidden">
+                        <h2>蜂蜜水果酵素</h2>
+                        <img src="../uploads/Fruit_enzyme.jpg" class="card-img" alt="蜂蜜水果酵素">
+                        <div class="material">
+                            <p>數量: <span id="displayQuantity9"></span></p>
+                            <p>金額: <span id="displayResult9"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="honey_vinegar" class="hidden">
+                        <h2>蜂蜜醋</h2>
+                        <img src="../uploads/honey_vinegar.jpg" class="card-img" alt="蜂蜜醋">
+                        <div class="material">
+                            <p>數量: <span id="displayQuantity10"></span></p>
+                            <p>金額: <span id="displayResult10"></span></p>
+                        </div>
+                    </div>
+                    
+                    <div id="pollen_grains" class="hidden">
+                        <h2>罐裝花粉粒</h2>
+                        <img src="../uploads/pollen_grains.jpg" class="card-img" alt="罐裝花粉粒">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste11"></span></p>
+                            <p>數量: <span id="displayQuantity11"></span></p>
+                            <p>金額: <span id="displayResult11"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="Queen_Bee_Capsule" class="hidden">
+                        <h2>蜂王乳/膠囊/</h2>
+                        <img src="../uploads/Queen_Bee_Capsule.jpg" class="card-img" alt="蜂王乳/膠囊">
+                        <div class="material">
+                            <p>口味: <span id="displayTaste12"></span></p>
+                            <p>數量: <span id="displayQuantity12"></span></p>
+                            <p>金額: <span id="displayResult12"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="Propolis" class="hidden">
+                        <h2>蜂膠</h2>
+                        <img src="../uploads/Propolis.jpg" class="card-img" alt="蜂膠">
+                        <div class="material">
+                            <p>數量: <span id="displayQuantity13"></span></p>
+                            <p>金額: <span id="displayResult13"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <p>總金額: <span id="displayGrandTotal"></span></p>
+                </div>
+                <button type="button" class="btn" onclick="submitOrder()">確認送出</button>
+ 
+               
+            </div>
+            
+        </div>
+    </div>
+
+    <!--版權-->
+    <!--版權-->
+    <div class="footer">
+        <footer class="bg-body-tertiary text-center">
+            <div class="container p-4 pb-0">
+              <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #d8dbe2;"
+                  href="#!"
+                  role="button">
+                  <i class="bi bi-telephone-fill" style="color: black; font-size: 3em;"></i>
+                <span>09xxxxxxxx</span>
+            </a>
+            <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #d8dbe2;"
+                  href="#!"
+                  role="button">
+                  <i class="bi bi-envelope" style="color: black; font-size: 3em;"></i>
+                <span>xxx@gmail.com</span>
+            </a>
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #d8dbe2;"
+              href="https://m.facebook.com/people/%E5%90%B3%E5%AE%B6%E8%9C%82%E5%A0%B4/100069146348035/?locale=zh_TW"
+                  role="button"><i class="bi bi-facebook" style="color: black; font-size: 3em;"></i>
+            <span>吳家養蜂場FB</span>
+        </a>
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  role="button">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.789674050478!2d120.5004226!3d23.6151823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eb8c25555556b%3A0x3e8d26ab47236c17!2z5aSn5p6X5LqU55m-5bm06IyE6Iuz5qi55LiL5ZCz5a626aSK6JyC5aC0!5e0!3m2!1szh-TW!2stw!4v1712734175350!5m2!1szh-TW!2stw" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+          
+              </section>
+            </div>
+          </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/displayForm.js"></script>
+</body>
+</html>

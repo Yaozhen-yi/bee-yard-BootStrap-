@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大林五百年茄苳樹下-吳家養蜂場">
+    <meta name="keywords" content="大林吳家養蜂場">
+    <title>大林五百年茄苳樹下-吳家養蜂場</title>
+    <link rel="shortcut icon" href="../images/吳家養蜂場logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    <!--頭部-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="../images/吳家養蜂場.png" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+            吳家養蜂場</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./honey_myth.html">蜂蜜迷思</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./product.html">產品介紹</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">搜尋</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <!--商品-->
+    <form id="dataForm" action="" method="post">
+        <div class="section">
+            <span class="tltle">商品介紹</span>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item"><a href="#pure_hone">純蜜系列</a></li>
+                <li class="list-group-item"><a href="#gift-box">禮盒系列</a></li>
+                <li class="list-group-item"><a href="#other">相關產品系列</a></li>
+            </ul>
+            <h4 id="pure_hone">純蜜系列</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../uploads/3、5kg.jpg" class="card-img" alt="3、5公斤裝純蜜系列">
+                    <h5 class="title">3、5公斤裝純蜜系列</h5>
+                    <div class="dropdown-group">
+                        <div class="weight">
+                            <span class="title">公斤</span>
+                            <select name="weight" id="weight1">
+                                <option selected="selected" value="3">3公斤</option>
+                                <option value="5">5公斤</option>
+                            </select>    
+                        </div>
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste1">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity1" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result1">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="../uploads/Narrow_mouth.jpg" class="card-img" alt="窄口瓶裝純蜜系列">
+                    <h5 class="title">窄口瓶裝純蜜系列</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste2">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                                <option value="crystallized">結晶蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity2" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result2">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/suger.jpg" class="card-img" alt="果糖瓶裝純蜜系列">
+                    <h5 class="title">果糖瓶裝純蜜系列</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste3">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity3" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result3">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/portable.jpg" class="card-img" alt="隨身瓶裝純蜜系列">
+                    <h5 class="title">隨身瓶裝純蜜系列</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste4">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">白千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity4" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result4">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="gift-box">禮盒系列</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../uploads/gift_wide_mouth.jpg" class="card-img" alt="蜂蜜禮盒(寬口瓶)">
+                    <h5 class="title">蜂蜜禮盒(寬口瓶)</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste5">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">白千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity5" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result5">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="../uploads/gift_Narrow_mouth.jpg" class="card-img" alt="蜂蜜禮盒(窄口瓶)">
+                    <h5 class="title">蜂蜜禮盒(窄口瓶)</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste6">
+                                <option selected="selected" value="flowers">百花蜜</option>
+                                <option value="Xianfengcao">咸豐草蜜</option>
+                                <option value="tallow-tree">烏桕蜜</option>
+                                <option value="litchi">荔枝蜜</option>
+                                <option value="Longan">龍眼蜜</option>
+                                <option value="thousand-layers">白千層蜜</option>
+                                <option value="red-chai">紅柴蜜</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity6" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result6">0</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <h4 id="other">相關產品系列</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../uploads/lip_balm.jpg" class="card-img" alt="護唇膏">
+                    <h5 class="title">護唇膏</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste7">
+                                <option selected="selected" value="green-tea">綠茶香</option>
+                                <option value="Orange">香橙香</option>
+                                <option value="Osmanthus-fragrans">桂花香</option>
+                                <option value="natural">天然香</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity7" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result7">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="../uploads/Honey_loquat.jpg" class="card-img" alt="蜂蜜枇杷喉糖">
+                    <h5 class="title">蜂蜜枇杷喉糖</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">大/小</span>
+                            <select name="taste" id="taste8">
+                                <option selected="selected" value="small">小</option>
+                                <option value="big">大</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity8" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result8">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/Fruit_enzyme.jpg" class="card-img" alt="蜂蜜水果酵素">
+                    <h5 class="title">蜂蜜水果酵素</h5>
+                    <div class="dropdown-group">
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity9" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result9">0</span>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/honey_vinegar.jpg" class="card-img" alt="蜂蜜醋">
+                    <h5 class="title">蜂蜜醋</h5>
+                    <div class="dropdown-group">
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity10" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result10">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/pollen_grains.jpg" class="card-img" alt="罐裝花粉粒">
+                    <h5 class="title">罐裝花粉粒</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste11">
+                                <option selected="selected" value="camellia">茶花</option>
+                                <option value="Xianfengcao">咸豐草花</option>
+                                <option value="Rapeseed-flowers">油菜花</option>
+                                <option value="Adenophora-parviflora
+                                ">小花蔓澤蘭花</option>
+                                <option value="Pu-salt">埔鹽花</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity11" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result11">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/Queen_Bee_Capsule.jpg" class="card-img" alt="蜂王乳/膠囊">
+                    <h5 class="title">蜂王乳/膠囊</h5>
+                    <div class="dropdown-group">
+                        <div class="taste">
+                            <span class="title">口味</span>
+                            <select name="taste" id="taste12">
+                                <option selected="selected" value="capsule">膠囊</option>
+                                <option value="canned"> 蜂王乳罐裝</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity12" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result12">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">
+                    <img src="../uploads/Propolis.jpg" class="card-img" alt="蜂膠">
+                    <h5 class="title">蜂膠</h5>
+                    <div class="dropdown-group">
+                        <div class="quantity">
+                            <span class="title">數量</span>
+                            <input type="number" name="quantity" id="quantity13" min="0" placeholder="請輸入數量">
+                        </div>
+                        <div class="money">
+                            <span class="title">金額:</span>
+                            <span id="result13">0</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6" id="total">
+                    <span class="title">總金額</span>
+                    <span id="grandTotal">0</span>
+                    <button type="button" onclick="submitForm()">下一步</button>
+                </div>
+            </div>
+    
+            
+        </div>
+        
+</form>
+
+<button class="back-top">
+    <a href="#top">回頂端</a>
+</button>
+
+    <!--版權-->
+    <div class="footer">
+        <footer class="bg-body-tertiary text-center">
+            <div class="container p-4 pb-0">
+              <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #d8dbe2;"
+                  href="#!"
+                  role="button">
+                  <i class="bi bi-telephone-fill" style="color: black; font-size: 3em;"></i>
+                <span>09xxxxxxxx</span>
+            </a>
+            <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #d8dbe2;"
+                  href="#!"
+                  role="button">
+                  <i class="bi bi-envelope" style="color: black; font-size: 3em;"></i>
+                <span>xxx@gmail.com</span>
+            </a>
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #d8dbe2;"
+              href="https://m.facebook.com/people/%E5%90%B3%E5%AE%B6%E8%9C%82%E5%A0%B4/100069146348035/?locale=zh_TW"
+                  role="button"><i class="bi bi-facebook" style="color: black; font-size: 3em;"></i>
+            <span>吳家養蜂場FB</span>
+        </a>
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  role="button">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14622.789674050478!2d120.5004226!3d23.6151823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eb8c25555556b%3A0x3e8d26ab47236c17!2z5aSn5p6X5LqU55m-5bm06IyE6Iuz5qi55LiL5ZCz5a626aSK6JyC5aC0!5e0!3m2!1szh-TW!2stw!4v1712734175350!5m2!1szh-TW!2stw" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+          
+              </section>
+            </div>
+          </footer>
+    </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/product.js"></script>
+    
+</body>
+</html>

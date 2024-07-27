@@ -1,0 +1,31 @@
+.about{
+    width: 100%;
+    margin-top: 3rem;
+}
+.about .title{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.about .row{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.about .card-img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.about .text-description{
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.back-top{
+    font-size: 2rem;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.back-top a:hover{
+    color: #e2727e;
+}

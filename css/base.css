@@ -1,0 +1,79 @@
+/*清除默認樣式的代碼*/
+
+/*去除常見標籤默認的margin 和padding*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input{
+    margin: 0; 
+    padding:0;
+}
+
+/*內減模式*/
+*{
+    box-sizing: border-box;
+}
+
+/*設置網頁統一的字體大小、行高、字體系列相關屬性*/
+body{
+    font: 16px/1.5 "Helvetica Neue",Helvetica Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-aerif;
+    color: #333;
+}
+
+/*去除列表默認樣式*/
+ul,ol{
+    list-style: none;
+}
+
+/*去除默認傾斜效果*/
+em,i{
+    font-style: normal;
+}
+
+/*去除a標籤默認下滑線,並設置文字顏色*/
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*去除img的垂直對齊方式為居中對齊,去除img默認下間隙*/
+img{
+    vertical-align: middle;
+}
+
+/*去除input默認樣式*/
+input{
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+/*左浮動*/
+.fl{
+    float: left;
+}
+
+/*右浮動*/
+.fl{
+    float: right;
+}
+
+/*雙偽元素消除法*/
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}

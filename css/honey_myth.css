@@ -1,0 +1,39 @@
+.section{
+    width: 100%;
+    margin-top: 10rem;
+}
+.section .tltle{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.section .row{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.section .row .img-title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 700;
+}
+.section .card-img{
+    margin: 1rem 0.5rem;
+}
+.section .row .description{
+    border: 5px solid #4645452b;
+    margin: 1rem;
+}
+.section .row .description span{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.back-top{
+    font-size: 2rem;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.back-top a:hover{
+    color: #e2727e;
+}
