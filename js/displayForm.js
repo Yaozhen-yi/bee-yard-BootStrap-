@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 function submitOrder() {
-    fetch('config.json')
+    fetch('/config.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
