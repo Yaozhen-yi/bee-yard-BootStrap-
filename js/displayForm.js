@@ -162,6 +162,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 function submitOrder() {
+    fetch('config.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(config => {
+        const secureToken = config.email.secureToken;
     // 订购人信息
     let SubscriberInfo = {
         name: document.getElementById('information1').textContent,
@@ -269,7 +278,7 @@ function submitOrder() {
     body += '總金額: ' + document.getElementById('displayGrandTotal').textContent;
 
     Email.send({
-        SecureToken: "63949790-9755-4610-8dc5-343ce41ab0b1",
+        SecureToken: secureToken,
         To: 'zhenyiyao0221@gmail.com',
         From: "zhenyiyao0221@gmail.com",
         Subject: "訂購信息",
@@ -284,7 +293,9 @@ function submitOrder() {
             alert("送出失敗: " + error);
         }
     );
+})
 }
+
     //送出成功後將按鈕的字改為送出成功
 //     const submitButton = document.querySelector('.btn');
 //     submitButton.textContent = "送出成功";
