@@ -1,6 +1,6 @@
 .content .row{
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 5rem;
 }
 .row .form{
@@ -74,11 +74,10 @@ h2{
     
 }
 .content .btn{
-
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .content .btn:hover{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     border: 2px solid #adb5bd;
 }

@@ -1,6 +1,6 @@
 .section{
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 .section .tltle{
     font-size: 3rem;
@@ -29,10 +29,14 @@
 }
 
 .back-top{
+    width: 100%;
     font-size: 2rem;
-    float: right;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.back-top:hover{
+    font-size: 3rem;
+    font-weight: 700;
 }
 .back-top a:hover{
     color: #e2727e;

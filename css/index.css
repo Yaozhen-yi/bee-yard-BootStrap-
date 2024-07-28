@@ -1,7 +1,7 @@
 /*放index頁面的樣式表*/
 /*banner*/
 .banner{
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 .section{
@@ -67,12 +67,14 @@
 }
 
 .back-top{
-    width: 4rem;
-    height: 3rem;
+    width: 100%;
+    font-size: 2rem;
     font-weight: 700;
-    float: right;
-    margin-top: -2rem;
-    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.back-top:hover{
+    font-size: 3rem;
+    font-weight: 700;
 }
 .back-top a:hover{
     color: #e2727e;

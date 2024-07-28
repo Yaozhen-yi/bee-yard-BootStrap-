@@ -1,5 +1,5 @@
 #dataForm{
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 .section .tltle{
     font-size: 3rem;
@@ -31,6 +31,9 @@
 .section .row{
     width: 100%;
 }
+.section .row .col-sm-6{
+    margin-bottom: 1rem;
+}
 .section .row .title{
     font-size: 2rem;
     text-align: center;
@@ -55,20 +58,27 @@
     font-size: 1rem;
     text-align: center;
 }
-.dropdown-group .title{
-    font-weight: 700;
-}
 .dropdown-group div{
     width: 100%;
     margin-right: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-group .title{
+    font-weight: 700;
+    
 }
 .dropdown-group select{
+    width: 100%;
     text-align: center;
+    margin-top: 1rem;
 }
 .dropdown-group input{
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    margin-top: 1rem;
 }
 .dropdown-group .money{
     font-size: 1rem;
@@ -76,7 +86,7 @@
     color: red;
     display: flex;
     flex-direction: column;
-    margin-top: -1rem;
+    margin-top: 0rem;
 }
 .dropdown-group .money .title{
     margin-bottom: 5px;
@@ -99,9 +109,14 @@
 
 
 .back-top{
+    width: 100%;
     font-size: 2rem;
-    float: right;
-    margin-right: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.back-top:hover{
+    font-size: 3rem;
+    font-weight: 700;
 }
 .back-top a:hover{
     color: #e2727e;
