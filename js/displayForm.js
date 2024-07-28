@@ -1,7 +1,7 @@
 var displayFormData = JSON.parse(sessionStorage.getItem('displayFormData')) || {};
 var formData = JSON.parse(sessionStorage.getItem('formData')) || {};
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', ()=> {
     
     // 显示订购人信息
     document.getElementById('information1').textContent = displayFormData.name || '';
@@ -160,20 +160,141 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
 function submitOrder() {
+    // 订购人信息
+    let SubscriberInfo = {
+        name: document.getElementById('information1').textContent,
+        phone: document.getElementById('information2').textContent,
+        address: document.getElementById('information3').textContent,
+        email: document.getElementById('information4').textContent
+    };
 
-    // 顯示彈跳窗口:送出成功!
-    alert("送出成功!");
+    // 商品信息
+    let productInfo = [
+        {
+            weight: document.getElementById('displayWeight1').textContent,
+            taste: document.getElementById('displayTaste1').textContent,
+            quantity: document.getElementById('displayQuantity1').textContent.textContent,
+            result: document.getElementById('displayResult1').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste2').textContent,
+            quantity: document.getElementById('displayQuantity2').textContent.textContent,
+            result: document.getElementById('displayResult2').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste3').textContent,
+            quantity: document.getElementById('displayQuantity3').textContent.textContent,
+            result: document.getElementById('displayResult3').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste4').textContent,
+            quantity: document.getElementById('displayQuantity4').textContent.textContent,
+            result: document.getElementById('displayResult4').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste5').textContent,
+            quantity: document.getElementById('displayQuantity5').textContent.textContent,
+            result: document.getElementById('displayResult5').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste6').textContent,
+            quantity: document.getElementById('displayQuantity6').textContent.textContent,
+            result: document.getElementById('displayResult6').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste7').textContent,
+            quantity: document.getElementById('displayQuantity7').textContent.textContent,
+            result: document.getElementById('displayResult7').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste8').textContent,
+            quantity: document.getElementById('displayQuantity8').textContent.textContent,
+            result: document.getElementById('displayResult9').textContent
+        },
+        {
+            quantity: document.getElementById('displayQuantity9').textContent.textContent,
+            result: document.getElementById('displayResult9').textContent
+        },
+        {
+            quantity: document.getElementById('displayQuantity10').textContent.textContent,
+            result: document.getElementById('displayResult10').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste11').textContent,
+            quantity: document.getElementById('displayQuantity11').textContent.textContent,
+            result: document.getElementById('displayResult11').textContent
+        },
+        {
+            taste: document.getElementById('displayTaste12').textContent,
+            quantity: document.getElementById('displayQuantity12').textContent.textContent,
+            result: document.getElementById('displayResult12').textContent
+        },
+        {
+            quantity: document.getElementById('displayQuantity13').textContent.textContent,
+            result: document.getElementById('displayResult13').textContent
+        },
+        {
+            grandResult:document.getElementById('displayGrandTotal').textContent
+        }
+    ];
 
+    // 构建邮件正文
+    let body = '訂購人訊息:<br>' +
+               '姓名：' + SubscriberInfo.name + '<br>' +
+               '電話：' + SubscriberInfo.phone + '<br>' +
+               '地址：' + SubscriberInfo.address + '<br>' +
+               'E-mail：' + SubscriberInfo.email + '<br><br>' +
+               '訂購商品信息:<br>';
+
+    productInfo.forEach((item, index) => {
+        if (item.weight || item.taste || item.quantity || item.result) {
+            body += '商品 ' + (index + 1) + ':<br>';
+            if (item.weight) {
+                body += '公斤：' + item.weight + '<br>';
+            }
+            if (item.taste) {
+                body += '口味：' + item.taste + '<br>';
+            }
+            if (item.quantity) {
+                body += '數量：' + item.quantity + '<br>';
+            }
+            if (item.result) {
+                body += '金額：' + item.result + '<br>';
+            }
+            body += '<br>';
+        }
+    });
+    body += '總金額: ' + document.getElementById('displayGrandTotal').textContent;
+
+    Email.send({
+        SecureToken: "63949790-9755-4610-8dc5-343ce41ab0b1",
+        To: 'zhenyiyao0221@gmail.com',
+        From: "zhenyiyao0221@gmail.com",
+        Subject: "訂購信息",
+        Body: body,
+    }).then(
+        message => {
+            alert("送出成功!");
+            document.querySelector('.btn').textContent = "送出成功";
+        }
+    ).catch(
+        error => {
+            alert("送出失敗: " + error);
+        }
+    );
+}
     //送出成功後將按鈕的字改為送出成功
-    const submitButton = document.querySelector('.btn');
-    submitButton.textContent = "送出成功";
+//     const submitButton = document.querySelector('.btn');
+//     submitButton.textContent = "送出成功";
 
-    submitButton.disabled = true;
+//     submitButton.disabled = true;
 
     console.log("訂購人:",displayFormData);
     console.log("訂購商品:",formData)
-}
+// }
+
     
 
     
