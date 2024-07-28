@@ -34,7 +34,7 @@
 .section .row .title{
     font-size: 2rem;
     text-align: center;
-    margin: 1rem;
+    margin-top: 1rem;
 }
 .section #gift-box{
     font-size: 2rem;
@@ -57,15 +57,32 @@
 }
 .dropdown-group .title{
     font-weight: 700;
-    
+}
+.dropdown-group div{
+    width: 100%;
+    margin-right: 0.5rem;
 }
 .dropdown-group select{
     text-align: center;
 }
+.dropdown-group input{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
 .dropdown-group .money{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: red;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+}
+.dropdown-group .money .title{
+    margin-bottom: 5px;
+}
+.dropdown-group .money .result{
+    font-size: 1.5rem;
 }
 #total{
     margin-top: 4rem;
@@ -84,7 +101,6 @@
 .back-top{
     font-size: 2rem;
     float: right;
-    margin-top: 2rem;
     margin-right: 2rem;
 }
 .back-top a:hover{
