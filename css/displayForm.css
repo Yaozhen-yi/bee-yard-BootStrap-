@@ -46,14 +46,14 @@
     width: 100%;
 }
 h2{
-    margin: 1rem  1.5rem;
+    margin: 1rem  0.5rem;
 }
 .card-img{
     width: 25rem;
-    margin: 1rem 1rem;
+    margin: 1rem 0.5rem;
 }
 .material{
-    margin: 1.5rem;
+    margin: 0.5rem;
 }
 .material p{
     font-size: 1.5rem;
@@ -65,8 +65,7 @@ h2{
 }
 /*總金額*/
 .total{
-    margin: 3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0.5rem;
     font-size: 2rem;
 }
 .total span{
@@ -75,8 +74,8 @@ h2{
     
 }
 .content .btn{
-    margin: 1rem 3rem;
-    font-size: 1.5rem;
+
+    font-size: 3rem;
 }
 .content .btn:hover{
     font-size: 2rem;

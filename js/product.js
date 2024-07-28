@@ -3,102 +3,102 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //定義各個品項的價格表
     const prices1 = {
         "3": {
-            "flowers": 700,
-            "Xianfengcao": 700,
-            "tallow-tree": 700,
-            "litchi": 800,
-            "Longan": 900,
-            "thousand-layers": 900,
-            "red-chai": 900
+            "百花蜜": 700,
+            "咸豐草蜜": 700,
+            "烏桕蜜": 700,
+            "荔枝蜜": 800,
+            "龍眼蜜": 900,
+            "千層蜜": 900,
+            "紅柴蜜": 900
         },
         "5": {
-            "flowers": 1000,
-            "Xianfengcao": 1000,
-            "tallow-tree": 1000,
-            "litchi": 1100,
-            "Longan": 1300,
-            "thousand-layers": 1300,
-            "red-chai": 1300
+            "百花蜜": 1000,
+            "咸豐草蜜": 1000,
+            "烏桕蜜": 1000,
+            "荔枝蜜": 1100,
+            "龍眼蜜": 1300,
+            "千層蜜": 1300,
+            "紅柴蜜": 1300
         }
     };
 
     const prices2 = {
-        "flowers": 400,
-        "Xianfengcao": 400,
-        "tallow-tree": 400,
-        "litchi": 450,
-        "Longan": 450,
-        "thousand-layers": 450,
-        "red-chai": 450,
-        'crystallized':600
+        "百花蜜": 400,
+        "咸豐草蜜": 400,
+        "烏桕蜜": 400,
+        "荔枝蜜": 450,
+        "龍眼蜜": 450,
+        "千層蜜": 450,
+        "紅柴蜜": 450,
+        '結晶蜜':600
     };
 
     const prices3 = {
-        "flowers": 250,
-        "Xianfengcao": 250,
-        "tallow-tree": 250,
-        "litchi": 300,
-        "Longan": 300,
-        "thousand-layers": 300,
-        "red-chai": 300,
+        "百花蜜": 250,
+        "咸豐草蜜": 250,
+        "烏桕蜜": 250,
+        "荔枝蜜": 300,
+        "龍眼蜜": 300,
+        "千層蜜": 300,
+        "紅柴蜜": 300,
     };
 
     const prices4 = {
-        "flowers": 120,
-        "Xianfengcao": 120,
-        "tallow-tree": 120,
-        "litchi": 120,
-        "Longan": 120,
-        "thousand-layers": 120,
-        "red-chai": 120,
+        "百花蜜": 120,
+        "咸豐草蜜": 120,
+        "烏桕蜜": 120,
+        "荔枝蜜": 120,
+        "龍眼蜜": 120,
+        "白千層蜜": 120,
+        "紅柴蜜": 120,
     };
 
     const prices5 = {
-        "flowers": 500,
-        "Xianfengcao": 500,
-        "tallow-tree": 500,
-        "litchi": 500,
-        "Longan": 500,
-        "thousand-layers": 500,
-        "red-chai": 500,
+        "百花蜜": 500,
+        "咸豐草蜜": 500,
+        "烏桕蜜": 500,
+        "荔枝蜜": 500,
+        "龍眼蜜": 500,
+        "千層蜜": 500,
+        "紅柴蜜": 500,
     };
 
     const prices6 = {
-        "flowers": 500,
-        "Xianfengcao": 500,
-        "tallow-tree": 500,
-        "litchi": 500,
-        "Longan": 500,
-        "thousand-layers": 500,
-        "red-chai": 500,
+        "百花蜜": 500,
+        "咸豐草蜜": 500,
+        "烏桕蜜": 500,
+        "荔枝蜜": 500,
+        "龍眼蜜": 500,
+        "千層蜜": 500,
+        "紅柴蜜": 500,
     };
 
     const prices7 = {
-        "green-tea": 80,
-        "Orange": 80,
-        "Osmanthus-fragrans": 80,
-        "natural": 80
+        "綠茶香": 80,
+        "香橙香": 80,
+        "桂花香": 80,
+        "天然香": 80
     };
 
     const prices8 = {
-        "small": 150,
-        "big": 300
+        "小": 150,
+        "大": 300
     };
     const prices9 = 450;
 
     const prices10 = 400;
 
     const prices11 = {
-        "camellia": 400,
-        "Xianfengcao": 400,
-        "Rapeseed-flowers": 400,
-        "Adenophora-parviflora": 400,
-        "Pu-salt": 500,
+        "茶花": 400,
+        "咸豐草花": 400,
+        "油菜花": 400,
+        "小花蔓澤蘭花": 400,
+        "埔鹽花": 500,
     };
 
     const prices12 = {
-        "capsule": 1500,
-        "canned": 1500,
+        "膠囊": 1500,
+        "罐裝": 1500,
     };
 
     const prices13 = 1500
