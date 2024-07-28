@@ -17,11 +17,14 @@
     font-weight: 700;
 }
 .section .card-img{
-    margin: 1rem 0.5rem;
+    margin: 0rem 0.5rem;
 }
 .section .row .description{
     border: 5px solid #4645452b;
-    margin: 1rem;
+    margin: 1rem 1.5rem;
+}
+.section .row .description .title{
+    font-weight: 700;
 }
 .section .row .description span{
     font-size: 2rem;
