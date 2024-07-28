@@ -161,11 +161,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function submitOrder() {
-    // 模拟提交订单逻辑
-    // 这里可以添加实际的订单提交逻辑，例如通过AJAX发送数据到服务器
 
-    // 显示弹出窗口
+    // 顯示彈跳窗口:送出成功!
     alert("送出成功!");
+
+    //送出成功後將按鈕的字改為送出成功
+    const submitButton = document.querySelector('.btn');
+    submitButton.textContent = "送出成功";
+
+    submitButton.disabled = true;
+
     console.log("訂購人:",displayFormData);
     console.log("訂購商品:",formData)
 }
