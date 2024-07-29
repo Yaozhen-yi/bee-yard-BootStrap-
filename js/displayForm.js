@@ -166,6 +166,7 @@ function submitOrder() {
     submitButton.textContent = "送出成功";
 
     submitButton.disabled = true;
+    alert("送出完成!")
 }
 
     //送出成功後將按鈕的字改為送出成功
