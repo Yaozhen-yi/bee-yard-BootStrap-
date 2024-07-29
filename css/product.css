@@ -31,13 +31,12 @@
 .section .row{
     width: 100%;
 }
-.section .row .col-sm-6{
-    margin-bottom: 1rem;
-}
 .section .row .title{
+    width: 100%;
     font-size: 2rem;
-    text-align: center;
     margin-top: 1rem;
+    text-align: center;
+    margin-left: 1rem;
 }
 .section #gift-box{
     font-size: 2rem;
@@ -57,42 +56,36 @@
     width: 100%;
     font-size: 1rem;
     text-align: center;
+    flex-direction: column;
 }
 .dropdown-group div{
     width: 100%;
-    margin-right: 0.5rem;
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-.dropdown-group .title{
-    font-weight: 700;
-    
+    margin: 0.5rem 1rem ;
 }
 .dropdown-group select{
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    font-size: 2.5rem;
+    border: 1px solid black;
 }
 .dropdown-group input{
     border: 1px solid black;
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    font-size: 2.5rem;
+
 }
 .dropdown-group .money{
-    font-size: 1rem;
-    font-weight: 700;
     color: red;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0rem;
 }
 .dropdown-group .money .title{
-    margin-bottom: 5px;
+   font-size: 2rem;
 }
 .dropdown-group .money .result{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 #total{
     margin-top: 4rem;

@@ -5,9 +5,10 @@
 }
 .row .form{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; 
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
 }
 .row .form .title{
     font-weight: 700;
@@ -19,7 +20,6 @@
     font-size: 1.5rem;
 }
 .form #result span{
-    border: 2px solid #adb5bd;
     font-weight: 700;
 }
 /*隱藏樣式*/
@@ -34,7 +34,7 @@
 .buyProduct .title{
     font-weight: 700;
     font-size: 2rem;
-    margin-left: 3rem;
+    margin-left: 0.5rem;
 }
 
 #honey-series,
@@ -50,7 +50,7 @@ h2{
 }
 .card-img{
     width: 25rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem auto;
 }
 .material{
     margin: 0.5rem;
@@ -75,6 +75,7 @@ h2{
 }
 .content .btn{
     font-size: 2rem;
+    margin: 1rem 0;
 }
 .content .btn:hover{
     font-size: 3rem;
