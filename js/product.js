@@ -103,15 +103,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const prices13 = 1500
 
-    //定義函式用來計算結果
     function calculateTotal1() {
+       // 獲取選中值
         const weight = document.getElementById('weight1').value;
         const taste = document.getElementById('taste1').value;
         const quantity = parseInt(document.getElementById('quantity1').value) || 0;
-
+        //計算
         const pricePerItem = prices1[weight][taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result1').textContent = totalPrice;
+        // 獲取口味選擇下拉列表元素
+        const tasteSelect = document.getElementById('taste1');
+        // 獲取當前選中的選項
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        // 從選中的選項中獲取數據描述屬性
+        const description = selectedOption.getAttribute('data-description');
+        // 將獲取的描述顯示在描述欄位中
+        document.getElementById('description1').textContent = description;
+
         calculateAmountTotal();
     }
 
@@ -122,6 +131,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pricePerItem = prices2[taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result2').textContent = totalPrice;
+
+        const tasteSelect = document.getElementById('taste2');
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        const description = selectedOption.getAttribute('data-description');
+
+        document.getElementById('description2').textContent = description;
+
         calculateAmountTotal();
     }
 
@@ -132,6 +148,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pricePerItem = prices3[taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result3').textContent = totalPrice;
+
+        const tasteSelect = document.getElementById('taste3');
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        const description = selectedOption.getAttribute('data-description');
+
+        document.getElementById('description3').textContent = description;
         calculateAmountTotal();
     }
 
@@ -142,6 +164,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pricePerItem = prices4[taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result4').textContent = totalPrice;
+
+        const tasteSelect = document.getElementById('taste4');
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        const description = selectedOption.getAttribute('data-description');
+
+        document.getElementById('description4').textContent = description;
         calculateAmountTotal();
     }
 
@@ -152,6 +180,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pricePerItem = prices5[taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result5').textContent = totalPrice;
+
+        const tasteSelect = document.getElementById('taste5');
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        const description = selectedOption.getAttribute('data-description');
+
+        document.getElementById('description5').textContent = description;
         calculateAmountTotal();
     }
 
@@ -162,6 +196,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const pricePerItem = prices6[taste];
         const totalPrice = pricePerItem * quantity;
         document.getElementById('result6').textContent = totalPrice;
+
+        const tasteSelect = document.getElementById('taste6');
+        const selectedOption = tasteSelect.options[tasteSelect.selectedIndex];
+        const description = selectedOption.getAttribute('data-description');
+
+        document.getElementById('description6').textContent = description;
         calculateAmountTotal();
     }
 
