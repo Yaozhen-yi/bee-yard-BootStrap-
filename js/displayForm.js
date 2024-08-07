@@ -3,14 +3,14 @@ var formData = JSON.parse(sessionStorage.getItem('formData')) || {};
 
 document.addEventListener('DOMContentLoaded', ()=> {
     
-    // 显示订购人信息
+    // 顯示訂購人信息
     document.getElementById('information1').textContent = displayFormData.name || '';
     document.getElementById('information2').textContent = displayFormData.phone || '';
     document.getElementById('information3').textContent = displayFormData.address || '';
     document.getElementById('information4').textContent = displayFormData.email || '';
 
     
-    // 显示商品信息
+    // 顯示商品信息
     if (formData.weight1 && formData.taste1 && formData.quantity1 && formData.result1) {
         // 所有属性都有值
         document.getElementById('honey-series').classList.remove('hidden');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity1').textContent = formData.quantity1 || '';
         document.getElementById('displayResult1').textContent = formData.result1 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('honey-series').classList.add('hidden');
     }
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity2').textContent = formData.quantity2 || '';
         document.getElementById('displayResult2').textContent = formData.result2 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('narrow-mouth').classList.add('hidden');
     }
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity3').textContent = formData.quantity3 || '';
         document.getElementById('displayResult3').textContent = formData.result3 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('suger').classList.add('hidden');
     }
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity4').textContent = formData.quantity4 || '';
         document.getElementById('displayResult4').textContent = formData.result4 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('portable').classList.add('hidden');
     }
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity5').textContent = formData.quantity5 || '';
         document.getElementById('displayResult5').textContent = formData.result5 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('gift_wide_mouth').classList.add('hidden');
     }
     
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity6').textContent = formData.quantity6 || '';
         document.getElementById('displayResult6').textContent = formData.result6 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('gift_Narrow_mouth').classList.add('hidden');
     }
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity7').textContent = formData.quantity7 || '';
         document.getElementById('displayResult7').textContent = formData.result7 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('lip_balm').classList.add('hidden');
     }
 
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity8').textContent = formData.quantity8 || '';
         document.getElementById('displayResult8').textContent = formData.result8 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('Honey_loquat').classList.add('hidden');
     }
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity9').textContent = formData.quantity9 || '';
         document.getElementById('displayResult9').textContent = formData.result9 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('Fruit_enzyme').classList.add('hidden');
     }
 
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity10').textContent = formData.quantity10 || '';
         document.getElementById('displayResult10').textContent = formData.result10 || '';
     } else {
-        // 有任意一个属性没有值
+       // 有任意一個属性没有值
         document.getElementById('honey_vinegar').classList.add('hidden');
     }
 
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity11').textContent = formData.quantity11 || '';
         document.getElementById('displayResult11').textContent = formData.result11 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('pollen_grains').classList.add('hidden');
     }
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity12').textContent = formData.quantity12 || '';
         document.getElementById('displayResult12').textContent = formData.result12 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('Queen_Bee_Capsule').classList.add('hidden');
     }
 
@@ -149,12 +149,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementById('displayQuantity13').textContent = formData.quantity13 || '';
         document.getElementById('displayResult13').textContent = formData.result13 || '';
     } else {
-        // 有任意一个属性没有值
+        // 有任意一個属性没有值
         document.getElementById('Propolis').classList.add('hidden');
     }
     
     
-    // 计算总金额
+    // 计算總金额
     const grandTotal = parseFloat(formData.grandTotal || 0);
     document.getElementById('displayGrandTotal').textContent = grandTotal;
 

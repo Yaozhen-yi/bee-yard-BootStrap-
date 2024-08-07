@@ -7,7 +7,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         // 取得姓名的输入
         var name = document.getElementById('name').value;
         if (name == null || name == "") {
-            alert("姓名必须填写");
+            alert("姓名必須填寫");
             return false;
         }
         document.getElementById('information1').textContent = name;
@@ -15,7 +15,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         // 取得电话的输入
         var phone = document.getElementById('phone').value;
         if (phone == "") {
-            alert("请输入电话号码");
+            alert("請輸入電話號碼");
             return false;
         }
         document.getElementById('information2').textContent = phone;
@@ -23,7 +23,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         // 取得地址的输入
         var address = document.getElementById('address').value;
         if (address == "") {
-            alert("请输入地址");
+            alert("請输入地址");
             return false;
         }
         document.getElementById('information3').textContent = address;
@@ -33,7 +33,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         var atpos = email.indexOf("@");
         var dotpos = email.lastIndexOf(".");
         if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
-            alert("不是一个有效的 e-mail 地址");
+            alert("不是一個有效的 e-mail 地址");
             return false;
         }
         document.getElementById('information4').textContent = email;
